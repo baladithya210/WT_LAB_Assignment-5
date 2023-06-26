@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #8e4caf;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Results Page</h1>
+    <form method="POST" action="results.php">
+        <label>Registration Number:</label>
+        <input type="text" name="regNo"><br>
+
+        <label>Semester Number:</label>
+        <input type="text" name="semesterNo"><br>
+
+        <label>Category Number:</label>
+        <input type="text" name="catNo"><br>
+
+        <input type="submit" value="Get Marks">
+    </form>
+</body>
+</html>
